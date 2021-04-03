@@ -1,5 +1,5 @@
 /*
-* Copyright 2021 ShadowCore
+* Copyright 2021 MiracleCore
 *
 * This program is free software; you can redistribute it and/or modify it
 * under the terms of the GNU General Public License as published by the
@@ -98,7 +98,7 @@ struct boss_muehzala : public BossAI
             break;
 
         case SPELL_COSMIC_ARTIFICE:
-            me->CastSpell(nullptr, SPELL_COSMIC_ARTIFICE, 100.0f, false);
+            me->CastSpell(nullptr, SPELL_COSMIC_ARTIFICE, false);
             events.Repeat(15s, 18s);
             break;
 
